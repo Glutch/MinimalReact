@@ -130,6 +130,28 @@ touch .babelrc
 }
 ```
 
+## react
+```javascript
+npm install --save react react-dom
+```
+> index.js
+```javascript
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+
+const Hello = () => <div>Hello!</div>
+ 
+class App extends Component {
+  render() {
+    return (
+      <Hello />
+    )
+  }
+}
+
+ReactDOM.render(<App  />, document.getElementById('app'))
+```
+
 ## final project structure
 ```javascript
 - dist
@@ -140,3 +162,5 @@ touch .babelrc
 - package.json
 - webpack.config.js
 ```
+
+source https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
